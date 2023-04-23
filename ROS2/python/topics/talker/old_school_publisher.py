@@ -5,7 +5,7 @@ from time import sleep
 
 #little similar to cpp code
 
-def talter(args=None):
+def talker(args=None):
    rclpy.init(args=args)
    node = rclpy.create_node('publisher_node')
    pub = node.create_publisher('chatter',String, 10)
